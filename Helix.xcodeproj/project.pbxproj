@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B144A902200BD19E00750C52 /* ResolvingContext.swift */; };
+		B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */; };
+		B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D49772002767E0024A895 /* ResolvedItems.swift */; };
+		B1858E5B1FF01ACF000BD2B2 /* Helix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1858E511FF01ACF000BD2B2 /* Helix.framework */; };
+		B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E711FF01B42000BD2B2 /* HelixTests.swift */; };
+		B1858E761FF01B62000BD2B2 /* Helix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E751FF01B62000BD2B2 /* Helix.swift */; };
+		B1858E771FF01C07000BD2B2 /* Helix.h in Headers */ = {isa = PBXBuildFile; fileRef = B1858E6C1FF01B2D000BD2B2 /* Helix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1858E7F1FF01D06000BD2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */; };
+		B1858E861FF01D06000BD2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1858E851FF01D06000BD2B2 /* Assets.xcassets */; };
+		B1858E891FF01D06000BD2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */; };
+		B1858E8F1FF01D25000BD2B2 /* Helix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1858E511FF01ACF000BD2B2 /* Helix.framework */; };
+		B1858E921FF01DCB000BD2B2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E911FF01DCB000BD2B2 /* APIService.swift */; };
+		B1858EAE1FF86351000BD2B2 /* HelixTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */; };
+		B1858EB11FF863D8000BD2B2 /* HelixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB01FF863D8000BD2B2 /* HelixError.swift */; };
+		B1858EB31FF8645D000BD2B2 /* HelixResolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */; };
+		B1858EBA1FF864FB000BD2B2 /* GraphDefinitionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */; };
+		B1858EBE1FF8655C000BD2B2 /* GraphDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */; };
+		B1858EC61FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */; };
+		B1858EC81FF86649000BD2B2 /* CreationScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EC71FF86649000BD2B2 /* CreationScope.swift */; };
+		B1858ED01FF86710000BD2B2 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858ECF1FF86710000BD2B2 /* Injected.swift */; };
+		B1858EE61FF86941000BD2B2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EE51FF86941000BD2B2 /* Box.swift */; };
+		B1858EEC1FF869B4000BD2B2 /* Dictionary+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */; };
+		B1858EEE1FF869CB000BD2B2 /* Optional+desc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */; };
+		B1858EF61FF95255000BD2B2 /* HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EF51FF95255000BD2B2 /* HelixTag.swift */; };
+		B1B9129B20434EBC001606FC /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */; };
+		B1B9129D204355BE001606FC /* NSObject+HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */; };
+		B1B912A1204359EF001606FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A0204359EF001606FC /* LoginViewController.swift */; };
+		B1B912A3204359FD001606FC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A2204359FD001606FC /* LoginPresenter.swift */; };
+		B1B912A520435A09001606FC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A420435A09001606FC /* LoginInteractor.swift */; };
+		B1B912A720435A16001606FC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A620435A16001606FC /* LoginRouter.swift */; };
+		B1B912A920435A2E001606FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B912A820435A2E001606FC /* Login.storyboard */; };
+		B1B912AB20437880001606FC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912AA20437880001606FC /* AppRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1858E5C1FF01ACF000BD2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1858E481FF01ACF000BD2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1858E501FF01ACF000BD2B2;
+			remoteInfo = Helix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B144A902200BD19E00750C52 /* ResolvingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvingContext.swift; sourceTree = "<group>"; };
+		B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionBuilder.swift; sourceTree = "<group>"; };
+		B16D49772002767E0024A895 /* ResolvedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedItems.swift; sourceTree = "<group>"; };
+		B1858E511FF01ACF000BD2B2 /* Helix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Helix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1858E6C1FF01B2D000BD2B2 /* Helix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helix.h; sourceTree = "<group>"; };
+		B1858E6D1FF01B2D000BD2B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1858E711FF01B42000BD2B2 /* HelixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTests.swift; sourceTree = "<group>"; };
+		B1858E721FF01B42000BD2B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1858E751FF01B62000BD2B2 /* Helix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helix.swift; sourceTree = "<group>"; };
+		B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHelix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1858E851FF01D06000BD2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1858E881FF01D06000BD2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1858E8A1FF01D06000BD2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1858E911FF01DCB000BD2B2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTaggable.swift; sourceTree = "<group>"; };
+		B1858EB01FF863D8000BD2B2 /* HelixError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixError.swift; sourceTree = "<group>"; };
+		B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixResolvable.swift; sourceTree = "<group>"; };
+		B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinitionKey.swift; sourceTree = "<group>"; };
+		B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinition.swift; sourceTree = "<group>"; };
+		B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphObjectDefinitionTuple.swift; sourceTree = "<group>"; };
+		B1858EC71FF86649000BD2B2 /* CreationScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationScope.swift; sourceTree = "<group>"; };
+		B1858ECF1FF86710000BD2B2 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		B1858EE51FF86941000BD2B2 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Subscripts.swift"; sourceTree = "<group>"; };
+		B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+desc.swift"; sourceTree = "<group>"; };
+		B1858EF51FF95255000BD2B2 /* HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTag.swift; sourceTree = "<group>"; };
+		B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+HelixTag.swift"; sourceTree = "<group>"; };
+		B1B912A0204359EF001606FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B1B912A2204359FD001606FC /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B1B912A420435A09001606FC /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B1B912A620435A16001606FC /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		B1B912A820435A2E001606FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B1B912AA20437880001606FC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1858E4D1FF01ACF000BD2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E571FF01ACF000BD2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1858E5B1FF01ACF000BD2B2 /* Helix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E791FF01D06000BD2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1858E8F1FF01D25000BD2B2 /* Helix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1858E471FF01ACF000BD2B2 = {
+			isa = PBXGroup;
+			children = (
+				B1858E6B1FF01B2D000BD2B2 /* Source */,
+				B1858E701FF01B42000BD2B2 /* Tests */,
+				B1858E7D1FF01D06000BD2B2 /* DemoHelix */,
+				B1858E521FF01ACF000BD2B2 /* Products */,
+				B1858E8E1FF01D25000BD2B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1858E521FF01ACF000BD2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1858E511FF01ACF000BD2B2 /* Helix.framework */,
+				B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */,
+				B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1858E6B1FF01B2D000BD2B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B1858EB41FF8647B000BD2B2 /* Models */,
+				B1858EAF1FF863A4000BD2B2 /* Extensions */,
+				B1858EAC1FF8633B000BD2B2 /* Protocols */,
+				B1858E6C1FF01B2D000BD2B2 /* Helix.h */,
+				B1858E751FF01B62000BD2B2 /* Helix.swift */,
+				B1858EB01FF863D8000BD2B2 /* HelixError.swift */,
+				B1858E6D1FF01B2D000BD2B2 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B1858E701FF01B42000BD2B2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1858E711FF01B42000BD2B2 /* HelixTests.swift */,
+				B1858E721FF01B42000BD2B2 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B1858E7D1FF01D06000BD2B2 /* DemoHelix */ = {
+			isa = PBXGroup;
+			children = (
+				B1B9129E204359C3001606FC /* Views */,
+				B1858E901FF01DBA000BD2B2 /* Services */,
+				B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */,
+				B1B912AA20437880001606FC /* AppRouter.swift */,
+				B1858E851FF01D06000BD2B2 /* Assets.xcassets */,
+				B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */,
+				B1858E8A1FF01D06000BD2B2 /* Info.plist */,
+			);
+			path = DemoHelix;
+			sourceTree = "<group>";
+		};
+		B1858E8E1FF01D25000BD2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1858E901FF01DBA000BD2B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1858E911FF01DCB000BD2B2 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1858EAC1FF8633B000BD2B2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */,
+				B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */,
+				B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B1858EAF1FF863A4000BD2B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */,
+				B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */,
+				B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B1858EB41FF8647B000BD2B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B16D49772002767E0024A895 /* ResolvedItems.swift */,
+				B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */,
+				B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */,
+				B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */,
+				B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */,
+				B1858EC71FF86649000BD2B2 /* CreationScope.swift */,
+				B1858ECF1FF86710000BD2B2 /* Injected.swift */,
+				B1858EE51FF86941000BD2B2 /* Box.swift */,
+				B144A902200BD19E00750C52 /* ResolvingContext.swift */,
+				B1858EF51FF95255000BD2B2 /* HelixTag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1B9129E204359C3001606FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1B9129F204359D3001606FC /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1B9129F204359D3001606FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B1B912A0204359EF001606FC /* LoginViewController.swift */,
+				B1B912A2204359FD001606FC /* LoginPresenter.swift */,
+				B1B912A420435A09001606FC /* LoginInteractor.swift */,
+				B1B912A620435A16001606FC /* LoginRouter.swift */,
+				B1B912A820435A2E001606FC /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B1858E4E1FF01ACF000BD2B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1858E771FF01C07000BD2B2 /* Helix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B1858E501FF01ACF000BD2B2 /* Helix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1858E651FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "Helix" */;
+			buildPhases = (
+				B1858E4C1FF01ACF000BD2B2 /* Sources */,
+				B1858E4D1FF01ACF000BD2B2 /* Frameworks */,
+				B1858E4E1FF01ACF000BD2B2 /* Headers */,
+				B1858E4F1FF01ACF000BD2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Helix;
+			productName = Helix;
+			productReference = B1858E511FF01ACF000BD2B2 /* Helix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1858E591FF01ACF000BD2B2 /* HelixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1858E681FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "HelixTests" */;
+			buildPhases = (
+				B1858E561FF01ACF000BD2B2 /* Sources */,
+				B1858E571FF01ACF000BD2B2 /* Frameworks */,
+				B1858E581FF01ACF000BD2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1858E5D1FF01ACF000BD2B2 /* PBXTargetDependency */,
+			);
+			name = HelixTests;
+			productName = HelixTests;
+			productReference = B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1858E7B1FF01D06000BD2B2 /* DemoHelix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1858E8B1FF01D06000BD2B2 /* Build configuration list for PBXNativeTarget "DemoHelix" */;
+			buildPhases = (
+				B1858E781FF01D06000BD2B2 /* Sources */,
+				B1858E791FF01D06000BD2B2 /* Frameworks */,
+				B1858E7A1FF01D06000BD2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoHelix;
+			productName = DemoHelix;
+			productReference = B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1858E481FF01ACF000BD2B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Filtercode Ltd";
+				TargetAttributes = {
+					B1858E501FF01ACF000BD2B2 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					B1858E591FF01ACF000BD2B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B1858E7B1FF01D06000BD2B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B1858E4B1FF01ACF000BD2B2 /* Build configuration list for PBXProject "Helix" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1858E471FF01ACF000BD2B2;
+			productRefGroup = B1858E521FF01ACF000BD2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1858E501FF01ACF000BD2B2 /* Helix */,
+				B1858E591FF01ACF000BD2B2 /* HelixTests */,
+				B1858E7B1FF01D06000BD2B2 /* DemoHelix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1858E4F1FF01ACF000BD2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E581FF01ACF000BD2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E7A1FF01D06000BD2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B912A920435A2E001606FC /* Login.storyboard in Resources */,
+				B1858E891FF01D06000BD2B2 /* LaunchScreen.storyboard in Resources */,
+				B1858E861FF01D06000BD2B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1858E4C1FF01ACF000BD2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1858EB31FF8645D000BD2B2 /* HelixResolvable.swift in Sources */,
+				B1B9129D204355BE001606FC /* NSObject+HelixTag.swift in Sources */,
+				B1858EEC1FF869B4000BD2B2 /* Dictionary+Subscripts.swift in Sources */,
+				B1B9129B20434EBC001606FC /* StoryboardInstantiatable.swift in Sources */,
+				B1858EBE1FF8655C000BD2B2 /* GraphDefinition.swift in Sources */,
+				B1858ED01FF86710000BD2B2 /* Injected.swift in Sources */,
+				B1858EE61FF86941000BD2B2 /* Box.swift in Sources */,
+				B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */,
+				B1858EEE1FF869CB000BD2B2 /* Optional+desc.swift in Sources */,
+				B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */,
+				B1858EF61FF95255000BD2B2 /* HelixTag.swift in Sources */,
+				B1858EBA1FF864FB000BD2B2 /* GraphDefinitionKey.swift in Sources */,
+				B1858EC61FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift in Sources */,
+				B1858EAE1FF86351000BD2B2 /* HelixTaggable.swift in Sources */,
+				B1858E761FF01B62000BD2B2 /* Helix.swift in Sources */,
+				B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */,
+				B1858EB11FF863D8000BD2B2 /* HelixError.swift in Sources */,
+				B1858EC81FF86649000BD2B2 /* CreationScope.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E561FF01ACF000BD2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1858E781FF01D06000BD2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B912A1204359EF001606FC /* LoginViewController.swift in Sources */,
+				B1B912A520435A09001606FC /* LoginInteractor.swift in Sources */,
+				B1858E921FF01DCB000BD2B2 /* APIService.swift in Sources */,
+				B1858E7F1FF01D06000BD2B2 /* AppDelegate.swift in Sources */,
+				B1B912AB20437880001606FC /* AppRouter.swift in Sources */,
+				B1B912A720435A16001606FC /* LoginRouter.swift in Sources */,
+				B1B912A3204359FD001606FC /* LoginPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1858E5D1FF01ACF000BD2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1858E501FF01ACF000BD2B2 /* Helix */;
+			targetProxy = B1858E5C1FF01ACF000BD2B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1858E881FF01D06000BD2B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1858E631FF01ACF000BD2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1858E641FF01ACF000BD2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1858E661FF01ACF000BD2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.Helix;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1858E671FF01ACF000BD2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.Helix;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1858E691FF01ACF000BD2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.HelixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1858E6A1FF01ACF000BD2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.HelixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1858E8C1FF01D06000BD2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				INFOPLIST_FILE = DemoHelix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.DemoHelix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1858E8D1FF01D06000BD2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R59WRDGLW;
+				INFOPLIST_FILE = DemoHelix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.DemoHelix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1858E4B1FF01ACF000BD2B2 /* Build configuration list for PBXProject "Helix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1858E631FF01ACF000BD2B2 /* Debug */,
+				B1858E641FF01ACF000BD2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1858E651FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "Helix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1858E661FF01ACF000BD2B2 /* Debug */,
+				B1858E671FF01ACF000BD2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1858E681FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "HelixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1858E691FF01ACF000BD2B2 /* Debug */,
+				B1858E6A1FF01ACF000BD2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1858E8B1FF01D06000BD2B2 /* Build configuration list for PBXNativeTarget "DemoHelix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1858E8C1FF01D06000BD2B2 /* Debug */,
+				B1858E8D1FF01D06000BD2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1858E481FF01ACF000BD2B2 /* Project object */;
+}
