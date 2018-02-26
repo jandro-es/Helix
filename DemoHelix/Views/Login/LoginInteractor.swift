@@ -9,6 +9,7 @@
 import Foundation
 
 protocol LoginInteractorType {
+    init(apiServiceType: APIServiceType)
     func login(with username: String, password: String, completionHandler: @escaping (Bool) -> Void)
 }
 

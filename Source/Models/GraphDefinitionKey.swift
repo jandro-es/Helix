@@ -75,6 +75,7 @@ extension GraphDefinitionKey: CustomDebugStringConvertible {
 extension GraphDefinitionKey: Equatable {
     
     public static func == (lhs: GraphDefinitionKey, rhs: GraphDefinitionKey) -> Bool {
+        debugPrint("LHS: \(lhs.type) - \(lhs.typeOfArguments) - \(lhs.tag) ------ RHS: \(rhs.type) - \(rhs.typeOfArguments) - \(rhs.tag) ")
         return lhs.type == rhs.type && lhs.typeOfArguments == rhs.typeOfArguments && lhs.tag == rhs.tag
     }
 }

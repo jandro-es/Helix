@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88C1F072204463D300DFC962 /* GraphDefinitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */; };
 		B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B144A902200BD19E00750C52 /* ResolvingContext.swift */; };
 		B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */; };
 		B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D49772002767E0024A895 /* ResolvedItems.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinitionsTests.swift; sourceTree = "<group>"; };
 		B144A902200BD19E00750C52 /* ResolvingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvingContext.swift; sourceTree = "<group>"; };
 		B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionBuilder.swift; sourceTree = "<group>"; };
 		B16D49772002767E0024A895 /* ResolvedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedItems.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		B1858E701FF01B42000BD2B2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */,
 				B1858E711FF01B42000BD2B2 /* HelixTests.swift */,
 				B1858E721FF01B42000BD2B2 /* Info.plist */,
 			);
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */,
+				88C1F072204463D300DFC962 /* GraphDefinitionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

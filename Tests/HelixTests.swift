@@ -9,28 +9,64 @@
 import XCTest
 @testable import Helix
 
-class HelixTests: XCTestCase {
+private protocol APIServiceType: class { }
+private class APIService1: APIServiceType { }
+private class APIService2: APIServiceType { }
+
+private protocol ServerType: class {
+    weak var client: ClientType! { get }
+}
+private protocol ClientType: class {
+    var server: ServerType! { get }
+}
+
+class ResolvableService: APIServiceType, HelixResolvable {
+    var didResolveDependenciesCalled = false
+    func didResolveDependencies() {
+        XCTAssertFalse(didResolveDependenciesCalled, "didResolveDependencies should be called only once per instance")
+        didResolveDependenciesCalled = true
+    }
+}
+
+final class HelixTests: XCTestCase {
+    
+    let helix = Helix(parent: nil, configLambda: nil)
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        helix.reset()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_helix_does_not_create_retain_cycle() {
+        var helix: Helix! = Helix(parent: nil) { helix in
+            unowned let helix = helix
+            helix.register { APIService1() }
+            helix.register { (_: APIService1) -> APIServiceType in
+                let _ = helix
+                return APIService1() as APIServiceType
+                }.resolvingProperties { helix, _ in
+                    let _ = helix
+            }
         }
+        let _ = try! helix.resolve() as APIServiceType
+        weak var weakHelix = helix
+        helix = nil
+        XCTAssertNil(weakHelix)
     }
     
+    func test_resolves_instances_without_tag() {
+        helix.register { APIService1() as APIServiceType }
+        let serviceInstance = try! helix.resolve() as APIServiceType
+        XCTAssertTrue(serviceInstance is APIService1)
+        let anyService = try! helix.resolve(APIServiceType.self)
+        XCTAssertTrue(anyService is APIService1)
+        let optService = try! helix.resolve((APIServiceType?).self)
+        XCTAssertTrue(optService is APIService1)
+        let impService = try! helix.resolve((APIServiceType!).self)
+        XCTAssertTrue(impService is APIService1)
+    }
 }
