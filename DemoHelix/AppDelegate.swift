@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private var helix: Helix!
+    private var servicesHelix: Helix!
     private var baseNavigationController: UINavigationController!
     private let appRouter = AppRouter()
 
@@ -31,22 +32,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupDependencyInjection() {
-        helix = Helix(parent: nil, configLambda: nil)
-        addServices(to: helix)
+        servicesHelix = Helix(parent: nil, configLambda: nil)
+        helix = Helix(parent: servicesHelix, configLambda: nil)
+        addServices(to: servicesHelix)
         addInteractors(to: helix)
+        addRouters(to: helix)
         addPresenters(to: helix)
         addViewControllers(to: helix)
     }
     
     func addPresenters(to helix: Helix) {
         helix.register(.unique) {
-            LoginPresenter(interactor: try helix.resolve()) as LoginPresenterType
+            LoginPresenter(interactor: try helix.resolve(), router: try helix.resolve(), homeRouter: try helix.resolve()) as LoginPresenterType
+        }
+        helix.register(.unique) {
+            HomePresenter(interactor: try helix.resolve(), router: try helix.resolve()) as HomePresenterType
         }
     }
     
     func addInteractors(to helix: Helix) {
         helix.register(.unique) {
-            LoginInteractor(apiServiceType: try helix.resolve()) as LoginInteractorType
+            LoginInteractor(apiService: try helix.resolve()) as LoginInteractorType
+        }
+        helix.register(.unique) {
+            HomeInteractor(apiService: try helix.resolve()) as HomeInteractorType
         }
     }
     
@@ -56,10 +65,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func addRouters(to helix: Helix) {
+        helix.register(.unique) {
+            LoginRouter() as LoginRouterType
+        }
+        helix.register(.unique) {
+            HomeRouter() as HomeRouterType
+        }
+    }
+    
     func addViewControllers(to helix: Helix) {
         helix.register(storyboardType: LoginViewController.self, tag: "LoginViewController")
             .resolvingProperties { (helix, vc) in
                 vc.presenter = try helix.resolve(tag: "LoginPresenter") as LoginPresenterType
+        }
+        
+        helix.register(storyboardType: HomeViewController.self, tag: "HomeViewController")
+            .resolvingProperties { (helix, vc) in
+                vc.presenter = try helix.resolve(tag: "HomePresenter") as HomePresenterType
         }
         Helix.ibHelixes = [helix]
     }

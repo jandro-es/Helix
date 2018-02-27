@@ -6,4 +6,15 @@
 //  Copyright © 2018 Filtercode Ltd. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol LoginRouterType {
+    func start(in navigationController: UINavigationController)
+}
+
+struct LoginRouter: LoginRouterType {
+    
+    func start(in navigationController: UINavigationController) {
+        
+    }
+}
