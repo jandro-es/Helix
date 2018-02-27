@@ -101,9 +101,9 @@ public final class Helix {
     /// - Returns: The instance of the type if succeeded
     /// - Throws: Possible errors during resolution
     public func resolve<T>(tag: HelixTaggable? = nil) throws -> T {
-        return try resolve(tag: tag) { (factory: () throws -> T) in
+        return try resolve(tag: tag, resolvingLambda: { (factory: () throws -> T) in
             try factory()
-        }
+        })
     }
     
     /// Tries to resolve and instance of type T with the given tag
@@ -671,7 +671,7 @@ public final class Helix {
         }
         try autoInjectProperties(in: resolvedInstance)
         try definition.resolveProperties(of: resolvedInstance, helix: self)
-        debugPrint("Can't reuse, new instance resolved for \(key.type) with \(resolvedInstance)")
+        debugPrint("Can not reuse, new instance resolved for \(key.type) with \(resolvedInstance)")
         return resolvedInstance
     }
     
