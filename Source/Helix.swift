@@ -101,9 +101,9 @@ public final class Helix {
     /// - Returns: The instance of the type if succeeded
     /// - Throws: Possible errors during resolution
     public func resolve<T>(tag: HelixTaggable? = nil) throws -> T {
-        return try resolve(tag: tag) { (factory: () throws -> T) in
+        return try resolve(tag: tag, resolvingLambda: { (factory: () throws -> T) in
             try factory()
-        }
+        })
     }
     
     /// Tries to resolve and instance of type T with the given tag
@@ -388,7 +388,7 @@ public final class Helix {
     ///   - tag: The tag to associate it with
     ///   - factory: The resolving factory
     /// - Returns: The GraphDefinition
-    @discardableResult public func register<T, A, B, C>(_ scope: CreationScope = .shared, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C)) throws -> T) -> GraphDefinition<T, (A, B, C)> {
+    @discardableResult public func register<T, A, B, C>(_ scope: CreationScope = .unique, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C)) throws -> T) -> GraphDefinition<T, (A, B, C)> {
         return register(scope: scope, type: type, tag: tag, factory: factory, numberOfArguments: 3)  { container, tag in try factory((container.resolve(tag: tag), container.resolve(tag: tag), container.resolve(tag: tag))) }
     }
     
@@ -400,7 +400,7 @@ public final class Helix {
     ///   - tag: The tag to associate it with
     ///   - factory: The resolving factory
     /// - Returns: The GraphDefinition
-    @discardableResult public func register<T, A, B, C, D>(_ scope: CreationScope = .shared, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C, D)) throws -> T) -> GraphDefinition<T, (A, B, C, D)> {
+    @discardableResult public func register<T, A, B, C, D>(_ scope: CreationScope = .unique, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C, D)) throws -> T) -> GraphDefinition<T, (A, B, C, D)> {
         return register(scope: scope, type: type, tag: tag, factory: factory, numberOfArguments: 4) { container, tag in try factory((container.resolve(tag: tag),  container.resolve(tag: tag), container.resolve(tag: tag), container.resolve(tag: tag))) }
     }
     
@@ -412,7 +412,7 @@ public final class Helix {
     ///   - tag: The tag to associate it with
     ///   - factory: The resolving factory
     /// - Returns: The GraphDefinition
-    @discardableResult public func register<T, A, B, C, D, E>(_ scope: CreationScope = .shared, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C, D, E)) throws -> T) -> GraphDefinition<T, (A, B, C, D, E)> {
+    @discardableResult public func register<T, A, B, C, D, E>(_ scope: CreationScope = .unique, type: T.Type = T.self, tag: HelixTaggable? = nil, factory: @escaping ((A, B, C, D, E)) throws -> T) -> GraphDefinition<T, (A, B, C, D, E)> {
         return register(scope: scope, type: type, tag: tag, factory: factory, numberOfArguments: 5) { container, tag in try factory((container.resolve(tag: tag), container.resolve(tag: tag), container.resolve(tag: tag), container.resolve(tag: tag), container.resolve(tag: tag))) }
     }
     
@@ -423,7 +423,7 @@ public final class Helix {
     ///   - tag: The tag to associate it with
     /// - Returns: Returns a GraphDefinition
     public func register<T: NSObject>(storyboardType type: T.Type, tag: HelixTaggable? = nil) -> GraphDefinition<T, ()> where T: StoryboardInstantiatable {
-        return register(.unique, type: type, tag: tag, factory: { T() })
+        return register(.shared, type: type, tag: tag, factory: { T() })
     }
     
     /// Tries to validate the whole configuration of the Helix instance by resolving every
@@ -671,7 +671,7 @@ public final class Helix {
         }
         try autoInjectProperties(in: resolvedInstance)
         try definition.resolveProperties(of: resolvedInstance, helix: self)
-        debugPrint("Can't reuse, new instance resolved for \(key.type) with \(resolvedInstance)")
+        debugPrint("Can not reuse, new instance resolved for \(key.type) with \(resolvedInstance)")
         return resolvedInstance
     }
     

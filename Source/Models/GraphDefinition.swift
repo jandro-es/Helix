@@ -129,15 +129,16 @@ public final class GraphDefinition<T, U>: GraphDefinitionType {
     /// this method to resolve it.
     ///
     /// - Parameter lambda: The new lambda to resolve properties
-    public func resolvingProperties(_ lambda: @escaping (Helix, T) throws -> Void) {
+    @discardableResult public func resolvingProperties(_ lambda: @escaping (Helix, T) throws -> Void) -> GraphDefinition {
         guard let existingResolvePropertiesLambda = resolvePropertiesLambda else {
             resolvePropertiesLambda = { try lambda($0, $1 as! T) }
-            return
+            return self
         }
         resolvePropertiesLambda! = {
             try existingResolvePropertiesLambda($0, $1 as! T)
             try lambda($0, $1 as! T)
         }
+        return self
     }
     
     // MARK: - InternalGraphDefinitionType
@@ -296,7 +297,7 @@ extension GraphDefinition: InternalResolvingGraphDefinitionType {
 extension GraphDefinition: CustomStringConvertible {
     
     public var description: String {
-        return "GraphDefinition object for type: \(T.self) with creation scope: \(creationScope)"
+        return "GraphDefinition object for type: \(T.self) with creation scope: \(creationScope) and numberOfArguments: \(numberOfArguments)"
     }
 }
 
@@ -305,6 +306,6 @@ extension GraphDefinition: CustomStringConvertible {
 extension GraphDefinition: CustomDebugStringConvertible {
 
     public var debugDescription: String {
-        return "GraphDefinition object for type: \(T.self) with creation scope: \(creationScope)"
+        return "GraphDefinition object for type: \(T.self) with creation scope: \(creationScope) and numberOfArguments: \(numberOfArguments)"
     }
 }

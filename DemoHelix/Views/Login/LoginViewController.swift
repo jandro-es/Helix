@@ -33,8 +33,14 @@ final class LoginViewController: UIViewController, StoryboardInstantiatable {
             debugPrint("Empty fields")
             return
         }
-        presenter?.login(with: username, password: password, completionHandler: { (succeed) in
+        presenter?.login(with: username, password: password, completionHandler: { [weak self](succeed) in
             debugPrint("Login successful: \(succeed)")
+            if succeed {
+                guard let navigationController = self?.navigationController else {
+                    return
+                }
+                self?.presenter.pushHomeScreen(in: navigationController)
+            }
         })
     }
 }

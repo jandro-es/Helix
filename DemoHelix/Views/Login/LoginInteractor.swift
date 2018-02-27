@@ -16,8 +16,8 @@ struct LoginInteractor: LoginInteractorType {
     
     let apiService: APIServiceType
     
-    init(apiServiceType: APIServiceType) {
-        self.apiService = apiServiceType
+    init(apiService: APIServiceType) {
+        self.apiService = apiService
     }
     
     func login(with username: String, password: String, completionHandler: @escaping (Bool) -> Void) {
