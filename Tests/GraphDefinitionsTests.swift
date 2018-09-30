@@ -76,6 +76,6 @@ final class GraphDefinitionsTests: XCTestCase {
     func test_registers_optional_as_forwardtypes() {
         let def: GraphDefinition<APIServiceType, ()> = GraphDefinition(creationScope: .unique) { APIService() as APIServiceType }
         XCTAssertTrue(def.implementingTypes.contains(where: { $0 == APIServiceType?.self }))
-        XCTAssertTrue(def.implementingTypes.contains(where: { $0 == APIServiceType!.self }))
+        XCTAssertTrue(def.implementingTypes.contains(where: { $0 == APIServiceType?.self }))
     }
 }

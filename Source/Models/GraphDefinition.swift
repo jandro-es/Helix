@@ -20,7 +20,7 @@ protocol ResolvingGraphDefinitionType: GraphDefinitionType {
 }
 
 protocol InternalResolvingGraphDefinitionType: InternalGraphDefinitionType {
-    weak var resolvesWith: InternalResolvingGraphDefinitionType? { get }
+    var resolvesWith: InternalResolvingGraphDefinitionType? { get }
     var resolvesFrom: [InternalResolvingGraphDefinitionType] { get set }
     func implements(type aType: Any.Type)
     func implements(types aTypes: [Any.Type])
@@ -74,7 +74,7 @@ public final class GraphDefinition<T, U>: GraphDefinitionType {
     // MARK: - ResolvingGraphDefinitionType
     
     /// The types this GraphDefinition implements
-    private(set) var implementingTypes: [Any.Type] = [(T?).self, (T!).self]
+    private(set) var implementingTypes: [Any.Type] = [(T?).self, (T?).self]
     
     // MARK: - InternalResolvingGraphDefinitionType
     

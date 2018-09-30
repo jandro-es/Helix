@@ -39,7 +39,7 @@ public final class Helix {
     /// and returned as unwrapped instances
     var helixes: [Helix] {
         get {
-            return weakHelixes.flatMap({ $0.value })
+            return weakHelixes.compactMap({ $0.value })
         }
         set {
             weakHelixes = newValue.filter({ $0 !== self }).map(WeakBox.init)
@@ -664,7 +664,7 @@ public final class Helix {
             debugPrint("The instance is already resolved after type erasure matching, reusing it \(previouslyResolved)")
             return previouslyResolved
         }
-        resolvedItems[key: key, for: definition.creationScope, ctx.isCollaborating] = resolvedInstance
+        resolvedItems[key: key, for: definition.creationScope, ctx] = resolvedInstance
         if let resolvable = resolvedInstance as? HelixResolvable {
             resolvedItems.resolvableItems.append(resolvable)
             resolvable.resolveDependencies(with: self)
@@ -684,14 +684,14 @@ public final class Helix {
     ///   - key: The graphDefinitionKey if the instance to resolve
     /// - Returns: The already resolved instance if found
     func alreadyResolved<T>(graphDefinition: InternalGraphDefinitionType, key: GraphDefinitionKey) -> T? {
-        if let previouslyResolved = resolvedItems[key: key, for: graphDefinition.creationScope, ctx.isCollaborating] as? T {
+        if let previouslyResolved: T = resolvedItems[key: key, for: graphDefinition.creationScope, ctx] {
             return previouslyResolved
         }
         let keys = graphDefinition.implementingTypes.map({
             GraphDefinitionKey(type: $0, typeOfArguments: key.typeOfArguments, tag: key.tag)
         })
         for key in keys {
-            if let previouslyResolved = resolvedItems[key: key, for: graphDefinition.creationScope, ctx.isCollaborating] as? T {
+            if let previouslyResolved: T = resolvedItems[key: key, for: graphDefinition.creationScope, ctx] {
                 return previouslyResolved
             }
         }
