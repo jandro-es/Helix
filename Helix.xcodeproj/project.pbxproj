@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		88C1F072204463D300DFC962 /* GraphDefinitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */; };
-		88C1F075204584CD00DFC962 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F074204584CD00DFC962 /* HomeViewController.swift */; };
-		88C1F077204584D600DFC962 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F076204584D600DFC962 /* HomePresenter.swift */; };
-		88C1F079204584E200DFC962 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F078204584E200DFC962 /* HomeInteractor.swift */; };
-		88C1F07B204584ED00DFC962 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F07A204584ED00DFC962 /* HomeRouter.swift */; };
-		88C1F07D20458A2500DFC962 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C1F07C20458A2500DFC962 /* Home.storyboard */; };
 		B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B144A902200BD19E00750C52 /* ResolvingContext.swift */; };
 		B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */; };
 		B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D49772002767E0024A895 /* ResolvedItems.swift */; };
@@ -20,11 +15,6 @@
 		B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E711FF01B42000BD2B2 /* HelixTests.swift */; };
 		B1858E761FF01B62000BD2B2 /* Helix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E751FF01B62000BD2B2 /* Helix.swift */; };
 		B1858E771FF01C07000BD2B2 /* Helix.h in Headers */ = {isa = PBXBuildFile; fileRef = B1858E6C1FF01B2D000BD2B2 /* Helix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1858E7F1FF01D06000BD2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */; };
-		B1858E861FF01D06000BD2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1858E851FF01D06000BD2B2 /* Assets.xcassets */; };
-		B1858E891FF01D06000BD2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */; };
-		B1858E8F1FF01D25000BD2B2 /* Helix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1858E511FF01ACF000BD2B2 /* Helix.framework */; };
-		B1858E921FF01DCB000BD2B2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E911FF01DCB000BD2B2 /* APIService.swift */; };
 		B1858EAE1FF86351000BD2B2 /* HelixTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */; };
 		B1858EB11FF863D8000BD2B2 /* HelixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB01FF863D8000BD2B2 /* HelixError.swift */; };
 		B1858EB31FF8645D000BD2B2 /* HelixResolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */; };
@@ -39,12 +29,6 @@
 		B1858EF61FF95255000BD2B2 /* HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EF51FF95255000BD2B2 /* HelixTag.swift */; };
 		B1B9129B20434EBC001606FC /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */; };
 		B1B9129D204355BE001606FC /* NSObject+HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */; };
-		B1B912A1204359EF001606FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A0204359EF001606FC /* LoginViewController.swift */; };
-		B1B912A3204359FD001606FC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A2204359FD001606FC /* LoginPresenter.swift */; };
-		B1B912A520435A09001606FC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A420435A09001606FC /* LoginInteractor.swift */; };
-		B1B912A720435A16001606FC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912A620435A16001606FC /* LoginRouter.swift */; };
-		B1B912A920435A2E001606FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B912A820435A2E001606FC /* Login.storyboard */; };
-		B1B912AB20437880001606FC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B912AA20437880001606FC /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +43,6 @@
 
 /* Begin PBXFileReference section */
 		88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinitionsTests.swift; sourceTree = "<group>"; };
-		88C1F074204584CD00DFC962 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		88C1F076204584D600DFC962 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		88C1F078204584E200DFC962 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		88C1F07A204584ED00DFC962 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		88C1F07C20458A2500DFC962 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B144A902200BD19E00750C52 /* ResolvingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvingContext.swift; sourceTree = "<group>"; };
 		B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionBuilder.swift; sourceTree = "<group>"; };
 		B16D49772002767E0024A895 /* ResolvedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedItems.swift; sourceTree = "<group>"; };
@@ -74,12 +53,6 @@
 		B1858E711FF01B42000BD2B2 /* HelixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTests.swift; sourceTree = "<group>"; };
 		B1858E721FF01B42000BD2B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1858E751FF01B62000BD2B2 /* Helix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helix.swift; sourceTree = "<group>"; };
-		B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHelix.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1858E851FF01D06000BD2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1858E881FF01D06000BD2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B1858E8A1FF01D06000BD2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1858E911FF01DCB000BD2B2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTaggable.swift; sourceTree = "<group>"; };
 		B1858EB01FF863D8000BD2B2 /* HelixError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixError.swift; sourceTree = "<group>"; };
 		B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixResolvable.swift; sourceTree = "<group>"; };
@@ -94,12 +67,6 @@
 		B1858EF51FF95255000BD2B2 /* HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTag.swift; sourceTree = "<group>"; };
 		B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+HelixTag.swift"; sourceTree = "<group>"; };
-		B1B912A0204359EF001606FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B1B912A2204359FD001606FC /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		B1B912A420435A09001606FC /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		B1B912A620435A16001606FC /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		B1B912A820435A2E001606FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B1B912AA20437880001606FC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,35 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1858E791FF01D06000BD2B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1858E8F1FF01D25000BD2B2 /* Helix.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88C1F07320457F5E00DFC962 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				88C1F074204584CD00DFC962 /* HomeViewController.swift */,
-				88C1F076204584D600DFC962 /* HomePresenter.swift */,
-				88C1F078204584E200DFC962 /* HomeInteractor.swift */,
-				88C1F07A204584ED00DFC962 /* HomeRouter.swift */,
-				88C1F07C20458A2500DFC962 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		B1858E471FF01ACF000BD2B2 = {
 			isa = PBXGroup;
 			children = (
 				B1858E6B1FF01B2D000BD2B2 /* Source */,
 				B1858E701FF01B42000BD2B2 /* Tests */,
-				B1858E7D1FF01D06000BD2B2 /* DemoHelix */,
 				B1858E521FF01ACF000BD2B2 /* Products */,
 				B1858E8E1FF01D25000BD2B2 /* Frameworks */,
 			);
@@ -157,7 +103,6 @@
 			children = (
 				B1858E511FF01ACF000BD2B2 /* Helix.framework */,
 				B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */,
-				B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,33 +131,11 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		B1858E7D1FF01D06000BD2B2 /* DemoHelix */ = {
-			isa = PBXGroup;
-			children = (
-				B1B9129E204359C3001606FC /* Views */,
-				B1858E901FF01DBA000BD2B2 /* Services */,
-				B1858E7E1FF01D06000BD2B2 /* AppDelegate.swift */,
-				B1B912AA20437880001606FC /* AppRouter.swift */,
-				B1858E851FF01D06000BD2B2 /* Assets.xcassets */,
-				B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */,
-				B1858E8A1FF01D06000BD2B2 /* Info.plist */,
-			);
-			path = DemoHelix;
-			sourceTree = "<group>";
-		};
 		B1858E8E1FF01D25000BD2B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1858E901FF01DBA000BD2B2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B1858E911FF01DCB000BD2B2 /* APIService.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		B1858EAC1FF8633B000BD2B2 /* Protocols */ = {
@@ -250,27 +173,6 @@
 				B1858EF51FF95255000BD2B2 /* HelixTag.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B1B9129E204359C3001606FC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				88C1F07320457F5E00DFC962 /* Home */,
-				B1B9129F204359D3001606FC /* Login */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B1B9129F204359D3001606FC /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B1B912A0204359EF001606FC /* LoginViewController.swift */,
-				B1B912A2204359FD001606FC /* LoginPresenter.swift */,
-				B1B912A420435A09001606FC /* LoginInteractor.swift */,
-				B1B912A620435A16001606FC /* LoginRouter.swift */,
-				B1B912A820435A2E001606FC /* Login.storyboard */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,23 +225,6 @@
 			productReference = B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B1858E7B1FF01D06000BD2B2 /* DemoHelix */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1858E8B1FF01D06000BD2B2 /* Build configuration list for PBXNativeTarget "DemoHelix" */;
-			buildPhases = (
-				B1858E781FF01D06000BD2B2 /* Sources */,
-				B1858E791FF01D06000BD2B2 /* Frameworks */,
-				B1858E7A1FF01D06000BD2B2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DemoHelix;
-			productName = DemoHelix;
-			productReference = B1858E7C1FF01D06000BD2B2 /* DemoHelix.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -356,11 +241,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					B1858E591FF01ACF000BD2B2 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
-					};
-					B1858E7B1FF01D06000BD2B2 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
@@ -382,7 +262,6 @@
 			targets = (
 				B1858E501FF01ACF000BD2B2 /* Helix */,
 				B1858E591FF01ACF000BD2B2 /* HelixTests */,
-				B1858E7B1FF01D06000BD2B2 /* DemoHelix */,
 			);
 		};
 /* End PBXProject section */
@@ -399,17 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1858E7A1FF01D06000BD2B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B912A920435A2E001606FC /* Login.storyboard in Resources */,
-				B1858E891FF01D06000BD2B2 /* LaunchScreen.storyboard in Resources */,
-				B1858E861FF01D06000BD2B2 /* Assets.xcassets in Resources */,
-				88C1F07D20458A2500DFC962 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,24 +318,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1858E781FF01D06000BD2B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B912A1204359EF001606FC /* LoginViewController.swift in Sources */,
-				B1B912A520435A09001606FC /* LoginInteractor.swift in Sources */,
-				B1858E921FF01DCB000BD2B2 /* APIService.swift in Sources */,
-				88C1F079204584E200DFC962 /* HomeInteractor.swift in Sources */,
-				88C1F075204584CD00DFC962 /* HomeViewController.swift in Sources */,
-				B1858E7F1FF01D06000BD2B2 /* AppDelegate.swift in Sources */,
-				B1B912AB20437880001606FC /* AppRouter.swift in Sources */,
-				88C1F077204584D600DFC962 /* HomePresenter.swift in Sources */,
-				B1B912A720435A16001606FC /* LoginRouter.swift in Sources */,
-				B1B912A3204359FD001606FC /* LoginPresenter.swift in Sources */,
-				88C1F07B204584ED00DFC962 /* HomeRouter.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -477,17 +327,6 @@
 			targetProxy = B1858E5C1FF01ACF000BD2B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B1858E871FF01D06000BD2B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1858E881FF01D06000BD2B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B1858E631FF01ACF000BD2B2 /* Debug */ = {
@@ -682,38 +521,6 @@
 			};
 			name = Release;
 		};
-		B1858E8C1FF01D06000BD2B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R59WRDGLW;
-				INFOPLIST_FILE = DemoHelix/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.DemoHelix;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B1858E8D1FF01D06000BD2B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R59WRDGLW;
-				INFOPLIST_FILE = DemoHelix/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.DemoHelix;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,15 +547,6 @@
 			buildConfigurations = (
 				B1858E691FF01ACF000BD2B2 /* Debug */,
 				B1858E6A1FF01ACF000BD2B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1858E8B1FF01D06000BD2B2 /* Build configuration list for PBXNativeTarget "DemoHelix" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1858E8C1FF01D06000BD2B2 /* Debug */,
-				B1858E8D1FF01D06000BD2B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

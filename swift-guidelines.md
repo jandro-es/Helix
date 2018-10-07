@@ -1,7 +1,7 @@
 # Swift Code Guidelines
 
 We use [Apple's API Design Guidelines](https://swift.org/documentation/api-design-guidelines/) as a reference to define our own code style, please find some time to read them.
-This is a living document to which everyone can contribute by *pull requests* to this document.
+This is a living document to which everyone can contribute by means of a *pull requests* to this document.
 
 ## Table of Contents
 
