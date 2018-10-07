@@ -14,7 +14,7 @@ private class APIService1: APIServiceType { }
 private class APIService2: APIServiceType { }
 
 private protocol ServerType: class {
-    weak var client: ClientType! { get }
+    var client: ClientType! { get }
 }
 private protocol ClientType: class {
     var server: ServerType! { get }
@@ -66,7 +66,7 @@ final class HelixTests: XCTestCase {
         XCTAssertTrue(anyService is APIService1)
         let optService = try! helix.resolve((APIServiceType?).self)
         XCTAssertTrue(optService is APIService1)
-        let impService = try! helix.resolve((APIServiceType!).self)
+        let impService = try! helix.resolve((APIServiceType?).self)
         XCTAssertTrue(impService is APIService1)
     }
 }

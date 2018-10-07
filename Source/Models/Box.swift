@@ -40,14 +40,6 @@ extension Optional: BoxType {
     }
 }
 
-// MARK: - ImplicitlyUnwrappedOptional + BoxType
-
-extension ImplicitlyUnwrappedOptional: BoxType {
-    var unboxed: Any? {
-        return self ?? nil
-    }
-}
-
 /// Box pattern for storing weak references
 /// We can only store `Reference Types`
 final class WeakBox<T>: WeakBoxType {

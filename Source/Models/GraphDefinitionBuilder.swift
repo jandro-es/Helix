@@ -59,13 +59,13 @@ final class GraphDefinitionBuilder<T, U> {
 extension GraphDefinitionBuilder: CustomStringConvertible {
     
     var description: String {
-        return "GraphDefinitionBuilder: creationScope: \(creationScope) - factory: \(factory) - wiringFactory: \(String(describing: wiringFactory)) - number of arguments: \(numberOfArguments) - resolvesWith: \(String(describing: resolvesWith))"
+        return "GraphDefinitionBuilder: creationScope: \(String(describing: creationScope)) - factory: \(String(describing: factory)) - wiringFactory: \(String(describing: wiringFactory)) - number of arguments: \(numberOfArguments) - resolvesWith: \(String(describing: resolvesWith))"
     }
 }
 
 extension GraphDefinitionBuilder: CustomDebugStringConvertible {
     
     var debugDescription: String {
-        return "GraphDefinitionBuilder: creationScope: \(creationScope) - factory: \(factory) - wiringFactory: \(String(describing: wiringFactory)) - number of arguments: \(numberOfArguments) - resolvesWith: \(String(describing: resolvesWith))"
+        return "GraphDefinitionBuilder: creationScope: \(String(describing: creationScope)) - factory: \(String(describing: factory)) - wiringFactory: \(String(describing: wiringFactory)) - number of arguments: \(numberOfArguments) - resolvesWith: \(String(describing: resolvesWith))"
     }
 }

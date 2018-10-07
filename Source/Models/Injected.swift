@@ -134,7 +134,7 @@ public final class InjectedWeak<T>: InjectedPropertyType<T>, AutoInjectedPropert
 }
 
 /// Base class for the two concrete implementations
-class InjectedPropertyType<T> {
+public class InjectedPropertyType<T> {
     
     // MARK: - Internal properties
     

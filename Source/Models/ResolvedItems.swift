@@ -52,24 +52,25 @@ final class ResolvedItems {
     
     // MARK: - Subscript
     
-    subscript(key key: GraphDefinitionKey, for scope: CreationScope, shared: Bool) -> Any? {
+    subscript<T>(key key: GraphDefinitionKey, for scope: CreationScope, context: ResolvingContext) -> T? {
         get {
+            let instance: Any?
             switch scope {
             case .lazySingleton, .singleton:
-                return shared ? sharedSingletons[key] : singletons[key]
+                instance = context.isCollaborating ? sharedSingletons[key] : singletons[key]
             case .weakSingleton:
-                let singletons = shared ? sharedWeakSingletons : weakSingletons
+                let singletons = context.isCollaborating ? sharedWeakSingletons : weakSingletons
                 if let boxed = singletons[key] as? WeakBoxType {
-                    return boxed.unboxed
-                }
-                else {
-                    return singletons[key]
+                    instance = boxed.unboxed
+                } else {
+                    instance = singletons[key]
                 }
             case .shared:
-                return resolvedItems[key]
+                instance = resolvedItems[key]
             case .unique:
                 return nil
             }
+            return instance.flatMap { $0 as? T }
         }
         set {
             switch scope {
