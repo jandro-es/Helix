@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Helix'
-  s.version          = '0.0.3'
+  s.version          = '0.0.6'
   s.summary          = 'Dependency injection framework for iOS written in Swift'
 
   s.description      = <<-DESC
