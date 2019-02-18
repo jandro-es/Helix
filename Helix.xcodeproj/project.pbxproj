@@ -3,200 +3,218 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"Helix::HelixPackageTests::ProductTarget" /* HelixPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "HelixPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_34 /* PBXTargetDependency */,
+			);
+			name = HelixPackageTests;
+			productName = HelixPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		88C1F072204463D300DFC962 /* GraphDefinitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */; };
-		B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B144A902200BD19E00750C52 /* ResolvingContext.swift */; };
-		B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */; };
-		B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16D49772002767E0024A895 /* ResolvedItems.swift */; };
-		B1858E5B1FF01ACF000BD2B2 /* Helix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1858E511FF01ACF000BD2B2 /* Helix.framework */; };
-		B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E711FF01B42000BD2B2 /* HelixTests.swift */; };
-		B1858E761FF01B62000BD2B2 /* Helix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858E751FF01B62000BD2B2 /* Helix.swift */; };
-		B1858E771FF01C07000BD2B2 /* Helix.h in Headers */ = {isa = PBXBuildFile; fileRef = B1858E6C1FF01B2D000BD2B2 /* Helix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1858EAE1FF86351000BD2B2 /* HelixTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */; };
-		B1858EB11FF863D8000BD2B2 /* HelixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB01FF863D8000BD2B2 /* HelixError.swift */; };
-		B1858EB31FF8645D000BD2B2 /* HelixResolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */; };
-		B1858EBA1FF864FB000BD2B2 /* GraphDefinitionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */; };
-		B1858EBE1FF8655C000BD2B2 /* GraphDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */; };
-		B1858EC61FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */; };
-		B1858EC81FF86649000BD2B2 /* CreationScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EC71FF86649000BD2B2 /* CreationScope.swift */; };
-		B1858ED01FF86710000BD2B2 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858ECF1FF86710000BD2B2 /* Injected.swift */; };
-		B1858EE61FF86941000BD2B2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EE51FF86941000BD2B2 /* Box.swift */; };
-		B1858EEC1FF869B4000BD2B2 /* Dictionary+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */; };
-		B1858EEE1FF869CB000BD2B2 /* Optional+desc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */; };
-		B1858EF61FF95255000BD2B2 /* HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1858EF51FF95255000BD2B2 /* HelixTag.swift */; };
-		B1B9129B20434EBC001606FC /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */; };
-		B1B9129D204355BE001606FC /* NSObject+HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */; };
+		B1F62471221AF49500800B3C /* HelixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62470221AF49500800B3C /* HelixError.swift */; };
+		B1F62478221AF4F400800B3C /* NSObject+HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62475221AF4F400800B3C /* NSObject+HelixTag.swift */; };
+		B1F62479221AF4F400800B3C /* Dictionary+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62476221AF4F400800B3C /* Dictionary+Subscripts.swift */; };
+		B1F6247A221AF4F400800B3C /* Optional+desc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62477221AF4F400800B3C /* Optional+desc.swift */; };
+		B1F62485221AF50200800B3C /* GraphObjectDefinitionTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6247B221AF50100800B3C /* GraphObjectDefinitionTuple.swift */; };
+		B1F62486221AF50200800B3C /* CreationScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6247C221AF50100800B3C /* CreationScope.swift */; };
+		B1F62487221AF50200800B3C /* ResolvedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6247D221AF50100800B3C /* ResolvedItems.swift */; };
+		B1F62488221AF50200800B3C /* GraphDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6247E221AF50100800B3C /* GraphDefinition.swift */; };
+		B1F62489221AF50200800B3C /* GraphDefinitionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6247F221AF50100800B3C /* GraphDefinitionBuilder.swift */; };
+		B1F6248A221AF50200800B3C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62480221AF50100800B3C /* Box.swift */; };
+		B1F6248B221AF50200800B3C /* GraphDefinitionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62481221AF50200800B3C /* GraphDefinitionKey.swift */; };
+		B1F6248C221AF50200800B3C /* HelixTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62482221AF50200800B3C /* HelixTag.swift */; };
+		B1F6248D221AF50200800B3C /* ResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62483221AF50200800B3C /* ResolvingContext.swift */; };
+		B1F6248E221AF50200800B3C /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62484221AF50200800B3C /* Injected.swift */; };
+		B1F62492221AF50B00800B3C /* HelixResolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6248F221AF50B00800B3C /* HelixResolvable.swift */; };
+		B1F62493221AF50B00800B3C /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62490221AF50B00800B3C /* StoryboardInstantiatable.swift */; };
+		B1F62494221AF50B00800B3C /* HelixTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62491221AF50B00800B3C /* HelixTaggable.swift */; };
+		B1F62497221AF5B100800B3C /* GraphDefinitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62495221AF5B100800B3C /* GraphDefinitionsTests.swift */; };
+		B1F62498221AF5B100800B3C /* HelixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62496221AF5B100800B3C /* HelixTests.swift */; };
+		OBJ_22 /* Helix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Helix.swift */; };
+		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_43 /* Helix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Helix::Helix::Product" /* Helix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B1858E5C1FF01ACF000BD2B2 /* PBXContainerItemProxy */ = {
+		B1F6246B221AF3DC00800B3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1858E481FF01ACF000BD2B2 /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B1858E501FF01ACF000BD2B2;
+			remoteGlobalIDString = "Helix::Helix";
 			remoteInfo = Helix;
+		};
+		B1F6246C221AF3DE00800B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Helix::HelixTests";
+			remoteInfo = HelixTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinitionsTests.swift; sourceTree = "<group>"; };
-		B144A902200BD19E00750C52 /* ResolvingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvingContext.swift; sourceTree = "<group>"; };
-		B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionBuilder.swift; sourceTree = "<group>"; };
-		B16D49772002767E0024A895 /* ResolvedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedItems.swift; sourceTree = "<group>"; };
-		B1858E511FF01ACF000BD2B2 /* Helix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Helix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1858E6C1FF01B2D000BD2B2 /* Helix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helix.h; sourceTree = "<group>"; };
-		B1858E6D1FF01B2D000BD2B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1858E711FF01B42000BD2B2 /* HelixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTests.swift; sourceTree = "<group>"; };
-		B1858E721FF01B42000BD2B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1858E751FF01B62000BD2B2 /* Helix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helix.swift; sourceTree = "<group>"; };
-		B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTaggable.swift; sourceTree = "<group>"; };
-		B1858EB01FF863D8000BD2B2 /* HelixError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixError.swift; sourceTree = "<group>"; };
-		B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixResolvable.swift; sourceTree = "<group>"; };
-		B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinitionKey.swift; sourceTree = "<group>"; };
-		B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDefinition.swift; sourceTree = "<group>"; };
-		B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphObjectDefinitionTuple.swift; sourceTree = "<group>"; };
-		B1858EC71FF86649000BD2B2 /* CreationScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationScope.swift; sourceTree = "<group>"; };
-		B1858ECF1FF86710000BD2B2 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		B1858EE51FF86941000BD2B2 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Subscripts.swift"; sourceTree = "<group>"; };
-		B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+desc.swift"; sourceTree = "<group>"; };
-		B1858EF51FF95255000BD2B2 /* HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixTag.swift; sourceTree = "<group>"; };
-		B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
-		B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+HelixTag.swift"; sourceTree = "<group>"; };
+		B1F62470221AF49500800B3C /* HelixError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixError.swift; sourceTree = "<group>"; };
+		B1F62475221AF4F400800B3C /* NSObject+HelixTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+HelixTag.swift"; sourceTree = "<group>"; };
+		B1F62476221AF4F400800B3C /* Dictionary+Subscripts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Subscripts.swift"; sourceTree = "<group>"; };
+		B1F62477221AF4F400800B3C /* Optional+desc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+desc.swift"; sourceTree = "<group>"; };
+		B1F6247B221AF50100800B3C /* GraphObjectDefinitionTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphObjectDefinitionTuple.swift; sourceTree = "<group>"; };
+		B1F6247C221AF50100800B3C /* CreationScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationScope.swift; sourceTree = "<group>"; };
+		B1F6247D221AF50100800B3C /* ResolvedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedItems.swift; sourceTree = "<group>"; };
+		B1F6247E221AF50100800B3C /* GraphDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinition.swift; sourceTree = "<group>"; };
+		B1F6247F221AF50100800B3C /* GraphDefinitionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionBuilder.swift; sourceTree = "<group>"; };
+		B1F62480221AF50100800B3C /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		B1F62481221AF50200800B3C /* GraphDefinitionKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionKey.swift; sourceTree = "<group>"; };
+		B1F62482221AF50200800B3C /* HelixTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTag.swift; sourceTree = "<group>"; };
+		B1F62483221AF50200800B3C /* ResolvingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvingContext.swift; sourceTree = "<group>"; };
+		B1F62484221AF50200800B3C /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		B1F6248F221AF50B00800B3C /* HelixResolvable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixResolvable.swift; sourceTree = "<group>"; };
+		B1F62490221AF50B00800B3C /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		B1F62491221AF50B00800B3C /* HelixTaggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTaggable.swift; sourceTree = "<group>"; };
+		B1F62495221AF5B100800B3C /* GraphDefinitionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefinitionsTests.swift; sourceTree = "<group>"; };
+		B1F62496221AF5B100800B3C /* HelixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelixTests.swift; sourceTree = "<group>"; };
+		"Helix::Helix::Product" /* Helix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Helix::HelixTests::Product" /* HelixTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Helix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B1858E4D1FF01ACF000BD2B2 /* Frameworks */ = {
+		OBJ_23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1858E571FF01ACF000BD2B2 /* Frameworks */ = {
+		OBJ_42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B1858E5B1FF01ACF000BD2B2 /* Helix.framework in Frameworks */,
+				OBJ_43 /* Helix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B1858E471FF01ACF000BD2B2 = {
+		B1F62472221AF4D600800B3C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B1858E6B1FF01B2D000BD2B2 /* Source */,
-				B1858E701FF01B42000BD2B2 /* Tests */,
-				B1858E521FF01ACF000BD2B2 /* Products */,
-				B1858E8E1FF01D25000BD2B2 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B1858E521FF01ACF000BD2B2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B1858E511FF01ACF000BD2B2 /* Helix.framework */,
-				B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B1858E6B1FF01B2D000BD2B2 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B1858EB41FF8647B000BD2B2 /* Models */,
-				B1858EAF1FF863A4000BD2B2 /* Extensions */,
-				B1858EAC1FF8633B000BD2B2 /* Protocols */,
-				B1858E6C1FF01B2D000BD2B2 /* Helix.h */,
-				B1858E751FF01B62000BD2B2 /* Helix.swift */,
-				B1858EB01FF863D8000BD2B2 /* HelixError.swift */,
-				B1858E6D1FF01B2D000BD2B2 /* Info.plist */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		B1858E701FF01B42000BD2B2 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				88C1F071204463D300DFC962 /* GraphDefinitionsTests.swift */,
-				B1858E711FF01B42000BD2B2 /* HelixTests.swift */,
-				B1858E721FF01B42000BD2B2 /* Info.plist */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		B1858E8E1FF01D25000BD2B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1858EAC1FF8633B000BD2B2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				B1858EAD1FF86351000BD2B2 /* HelixTaggable.swift */,
-				B1858EB21FF8645D000BD2B2 /* HelixResolvable.swift */,
-				B1B9129A20434EBC001606FC /* StoryboardInstantiatable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		B1858EAF1FF863A4000BD2B2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B1858EEB1FF869B4000BD2B2 /* Dictionary+Subscripts.swift */,
-				B1858EED1FF869CB000BD2B2 /* Optional+desc.swift */,
-				B1B9129C204355BE001606FC /* NSObject+HelixTag.swift */,
+				B1F62476221AF4F400800B3C /* Dictionary+Subscripts.swift */,
+				B1F62475221AF4F400800B3C /* NSObject+HelixTag.swift */,
+				B1F62477221AF4F400800B3C /* Optional+desc.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B1858EB41FF8647B000BD2B2 /* Models */ = {
+		B1F62473221AF4DE00800B3C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B16D49772002767E0024A895 /* ResolvedItems.swift */,
-				B1858EB91FF864FB000BD2B2 /* GraphDefinitionKey.swift */,
-				B1858EBD1FF8655C000BD2B2 /* GraphDefinition.swift */,
-				B1858EC51FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift */,
-				B15AA07320027D78008C2296 /* GraphDefinitionBuilder.swift */,
-				B1858EC71FF86649000BD2B2 /* CreationScope.swift */,
-				B1858ECF1FF86710000BD2B2 /* Injected.swift */,
-				B1858EE51FF86941000BD2B2 /* Box.swift */,
-				B144A902200BD19E00750C52 /* ResolvingContext.swift */,
-				B1858EF51FF95255000BD2B2 /* HelixTag.swift */,
+				B1F6248F221AF50B00800B3C /* HelixResolvable.swift */,
+				B1F62491221AF50B00800B3C /* HelixTaggable.swift */,
+				B1F62490221AF50B00800B3C /* StoryboardInstantiatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B1F62474221AF4E500800B3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1F62480221AF50100800B3C /* Box.swift */,
+				B1F6247C221AF50100800B3C /* CreationScope.swift */,
+				B1F6247E221AF50100800B3C /* GraphDefinition.swift */,
+				B1F6247F221AF50100800B3C /* GraphDefinitionBuilder.swift */,
+				B1F62481221AF50200800B3C /* GraphDefinitionKey.swift */,
+				B1F6247B221AF50100800B3C /* GraphObjectDefinitionTuple.swift */,
+				B1F62482221AF50200800B3C /* HelixTag.swift */,
+				B1F62484221AF50200800B3C /* Injected.swift */,
+				B1F6247D221AF50100800B3C /* ResolvedItems.swift */,
+				B1F62483221AF50200800B3C /* ResolvingContext.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* HelixTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* HelixTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F62495221AF5B100800B3C /* GraphDefinitionsTests.swift */,
+				B1F62496221AF5B100800B3C /* HelixTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = HelixTests;
+			path = Tests/HelixTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Helix::HelixTests::Product" /* HelixTests.xctest */,
+				"Helix::Helix::Product" /* Helix.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Helix */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Helix */ = {
+			isa = PBXGroup;
+			children = (
+				B1F62474221AF4E500800B3C /* Models */,
+				B1F62473221AF4DE00800B3C /* Protocols */,
+				B1F62472221AF4D600800B3C /* Extensions */,
+				B1F62470221AF49500800B3C /* HelixError.swift */,
+				OBJ_9 /* Helix.swift */,
+			);
+			name = Helix;
+			path = Sources/Helix;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B1858E4E1FF01ACF000BD2B2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1858E771FF01C07000BD2B2 /* Helix.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		B1858E501FF01ACF000BD2B2 /* Helix */ = {
+		"Helix::Helix" /* Helix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1858E651FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "Helix" */;
+			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "Helix" */;
 			buildPhases = (
-				B1858E4C1FF01ACF000BD2B2 /* Sources */,
-				B1858E4D1FF01ACF000BD2B2 /* Frameworks */,
-				B1858E4E1FF01ACF000BD2B2 /* Headers */,
-				B1858E4F1FF01ACF000BD2B2 /* Resources */,
+				OBJ_21 /* Sources */,
+				OBJ_23 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,354 +222,345 @@
 			);
 			name = Helix;
 			productName = Helix;
-			productReference = B1858E511FF01ACF000BD2B2 /* Helix.framework */;
+			productReference = "Helix::Helix::Product" /* Helix.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B1858E591FF01ACF000BD2B2 /* HelixTests */ = {
+		"Helix::HelixTests" /* HelixTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1858E681FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "HelixTests" */;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "HelixTests" */;
 			buildPhases = (
-				B1858E561FF01ACF000BD2B2 /* Sources */,
-				B1858E571FF01ACF000BD2B2 /* Frameworks */,
-				B1858E581FF01ACF000BD2B2 /* Resources */,
+				OBJ_39 /* Sources */,
+				OBJ_42 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B1858E5D1FF01ACF000BD2B2 /* PBXTargetDependency */,
+				OBJ_44 /* PBXTargetDependency */,
 			);
 			name = HelixTests;
 			productName = HelixTests;
-			productReference = B1858E5A1FF01ACF000BD2B2 /* HelixTests.xctest */;
+			productReference = "Helix::HelixTests::Product" /* HelixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Helix::SwiftPMPackageDescription" /* HelixPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "HelixPackageDescription" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelixPackageDescription;
+			productName = HelixPackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B1858E481FF01ACF000BD2B2 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Filtercode Ltd";
-				TargetAttributes = {
-					B1858E501FF01ACF000BD2B2 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-					};
-					B1858E591FF01ACF000BD2B2 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = B1858E4B1FF01ACF000BD2B2 /* Build configuration list for PBXProject "Helix" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Helix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = B1858E471FF01ACF000BD2B2;
-			productRefGroup = B1858E521FF01ACF000BD2B2 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B1858E501FF01ACF000BD2B2 /* Helix */,
-				B1858E591FF01ACF000BD2B2 /* HelixTests */,
+				"Helix::Helix" /* Helix */,
+				"Helix::SwiftPMPackageDescription" /* HelixPackageDescription */,
+				"Helix::HelixPackageTests::ProductTarget" /* HelixPackageTests */,
+				"Helix::HelixTests" /* HelixTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		B1858E4F1FF01ACF000BD2B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1858E581FF01ACF000BD2B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		B1858E4C1FF01ACF000BD2B2 /* Sources */ = {
+		OBJ_21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B1858EB31FF8645D000BD2B2 /* HelixResolvable.swift in Sources */,
-				B1B9129D204355BE001606FC /* NSObject+HelixTag.swift in Sources */,
-				B1858EEC1FF869B4000BD2B2 /* Dictionary+Subscripts.swift in Sources */,
-				B1B9129B20434EBC001606FC /* StoryboardInstantiatable.swift in Sources */,
-				B1858EBE1FF8655C000BD2B2 /* GraphDefinition.swift in Sources */,
-				B1858ED01FF86710000BD2B2 /* Injected.swift in Sources */,
-				B1858EE61FF86941000BD2B2 /* Box.swift in Sources */,
-				B144A903200BD19E00750C52 /* ResolvingContext.swift in Sources */,
-				B1858EEE1FF869CB000BD2B2 /* Optional+desc.swift in Sources */,
-				B16D49782002767F0024A895 /* ResolvedItems.swift in Sources */,
-				B1858EF61FF95255000BD2B2 /* HelixTag.swift in Sources */,
-				B1858EBA1FF864FB000BD2B2 /* GraphDefinitionKey.swift in Sources */,
-				B1858EC61FF86625000BD2B2 /* GraphObjectDefinitionTuple.swift in Sources */,
-				B1858EAE1FF86351000BD2B2 /* HelixTaggable.swift in Sources */,
-				B1858E761FF01B62000BD2B2 /* Helix.swift in Sources */,
-				B15AA07420027D78008C2296 /* GraphDefinitionBuilder.swift in Sources */,
-				B1858EB11FF863D8000BD2B2 /* HelixError.swift in Sources */,
-				B1858EC81FF86649000BD2B2 /* CreationScope.swift in Sources */,
+				OBJ_22 /* Helix.swift in Sources */,
+				B1F6247A221AF4F400800B3C /* Optional+desc.swift in Sources */,
+				B1F62493221AF50B00800B3C /* StoryboardInstantiatable.swift in Sources */,
+				B1F62479221AF4F400800B3C /* Dictionary+Subscripts.swift in Sources */,
+				B1F6248B221AF50200800B3C /* GraphDefinitionKey.swift in Sources */,
+				B1F62478221AF4F400800B3C /* NSObject+HelixTag.swift in Sources */,
+				B1F6248E221AF50200800B3C /* Injected.swift in Sources */,
+				B1F62494221AF50B00800B3C /* HelixTaggable.swift in Sources */,
+				B1F6248D221AF50200800B3C /* ResolvingContext.swift in Sources */,
+				B1F62487221AF50200800B3C /* ResolvedItems.swift in Sources */,
+				B1F6248A221AF50200800B3C /* Box.swift in Sources */,
+				B1F62492221AF50B00800B3C /* HelixResolvable.swift in Sources */,
+				B1F62488221AF50200800B3C /* GraphDefinition.swift in Sources */,
+				B1F6248C221AF50200800B3C /* HelixTag.swift in Sources */,
+				B1F62485221AF50200800B3C /* GraphObjectDefinitionTuple.swift in Sources */,
+				B1F62486221AF50200800B3C /* CreationScope.swift in Sources */,
+				B1F62471221AF49500800B3C /* HelixError.swift in Sources */,
+				B1F62489221AF50200800B3C /* GraphDefinitionBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1858E561FF01ACF000BD2B2 /* Sources */ = {
+		OBJ_28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				B1858E731FF01B43000BD2B2 /* HelixTests.swift in Sources */,
-				88C1F072204463D300DFC962 /* GraphDefinitionsTests.swift in Sources */,
+				OBJ_29 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_41 /* XCTestManifests.swift in Sources */,
+				B1F62497221AF5B100800B3C /* GraphDefinitionsTests.swift in Sources */,
+				B1F62498221AF5B100800B3C /* HelixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B1858E5D1FF01ACF000BD2B2 /* PBXTargetDependency */ = {
+		OBJ_34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B1858E501FF01ACF000BD2B2 /* Helix */;
-			targetProxy = B1858E5C1FF01ACF000BD2B2 /* PBXContainerItemProxy */;
+			target = "Helix::HelixTests" /* HelixTests */;
+			targetProxy = B1F6246C221AF3DE00800B3C /* PBXContainerItemProxy */;
+		};
+		OBJ_44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Helix::Helix" /* Helix */;
+			targetProxy = B1F6246B221AF3DC00800B3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B1858E631FF01ACF000BD2B2 /* Debug */ = {
+		OBJ_19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Helix.xcodeproj/Helix_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Helix;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Helix;
+			};
+			name = Debug;
+		};
+		OBJ_20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Helix.xcodeproj/Helix_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Helix;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Helix;
+			};
+			name = Release;
+		};
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		B1858E641FF01ACF000BD2B2 /* Release */ = {
+		OBJ_32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+			};
+			name = Debug;
+		};
+		OBJ_33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Helix.xcodeproj/HelixTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HelixTests;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Helix.xcodeproj/HelixTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HelixTests;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B1858E661FF01ACF000BD2B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.Helix;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B1858E671FF01ACF000BD2B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.Helix;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B1858E691FF01ACF000BD2B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R59WRDGLW;
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.HelixTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B1858E6A1FF01ACF000BD2B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R59WRDGLW;
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.filtercode.HelixTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B1858E4B1FF01ACF000BD2B2 /* Build configuration list for PBXProject "Helix" */ = {
+		OBJ_18 /* Build configuration list for PBXNativeTarget "Helix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1858E631FF01ACF000BD2B2 /* Debug */,
-				B1858E641FF01ACF000BD2B2 /* Release */,
+				OBJ_19 /* Debug */,
+				OBJ_20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1858E651FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "Helix" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Helix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1858E661FF01ACF000BD2B2 /* Debug */,
-				B1858E671FF01ACF000BD2B2 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1858E681FF01ACF000BD2B2 /* Build configuration list for PBXNativeTarget "HelixTests" */ = {
+		OBJ_25 /* Build configuration list for PBXNativeTarget "HelixPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1858E691FF01ACF000BD2B2 /* Debug */,
-				B1858E6A1FF01ACF000BD2B2 /* Release */,
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_31 /* Build configuration list for PBXAggregateTarget "HelixPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_32 /* Debug */,
+				OBJ_33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "HelixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B1858E481FF01ACF000BD2B2 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

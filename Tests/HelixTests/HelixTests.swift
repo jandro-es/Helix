@@ -69,4 +69,10 @@ final class HelixTests: XCTestCase {
         let impService = try! helix.resolve((APIServiceType?).self)
         XCTAssertTrue(impService is APIService1)
     }
+
+    static var allTests = [
+        ("test_helix_does_not_create_retain_cycle", test_helix_does_not_create_retain_cycle),
+        ("test_resolves_instances_without_tag", test_resolves_instances_without_tag)
+        ]
 }
+

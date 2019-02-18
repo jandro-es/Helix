@@ -78,4 +78,14 @@ final class GraphDefinitionsTests: XCTestCase {
         XCTAssertTrue(def.implementingTypes.contains(where: { $0 == APIServiceType?.self }))
         XCTAssertTrue(def.implementingTypes.contains(where: { $0 == APIServiceType?.self }))
     }
+
+    static var allTests = [
+        ("test_GraphDefinitionKey_equal", test_GraphDefinitionKey_equal),
+        ("test_GraphDefinitionKey_nonequal", test_GraphDefinitionKey_nonequal),
+        ("test_GraphDefinitionKey_notequal_factory", test_GraphDefinitionKey_notequal_factory),
+        ("test_GraphDefinitionKey_notequal_tag", test_GraphDefinitionKey_notequal_tag),
+        ("test_resolve_dependencies_call_block", test_resolve_dependencies_call_block),
+        ("test_resolve_dependencies_not_call_block_if_wrong_instance", test_resolve_dependencies_not_call_block_if_wrong_instance),
+        ("test_registers_optional_as_forwardtypes", test_registers_optional_as_forwardtypes),
+        ]
 }
